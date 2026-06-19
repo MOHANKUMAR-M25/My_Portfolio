@@ -4,8 +4,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Relative base so built asset URLs work on GitHub Pages project sites
-  // (https://<user>.github.io/<repo>/) regardless of the repo name.
-  base: './My_Portfolio/',
+  // Use the repository name as the base when deploying to GitHub Pages project sites
+  // e.g. https://<user>.github.io/My_Portfolio/
+  base: '/My_Portfolio/',
   plugins: [react(), tailwindcss()],
+  build: {
+    // Output to the `docs` folder so GitHub Pages can serve from `docs/` (or configure otherwise)
+    outDir: 'docs',
+    emptyOutDir: true,
+  },
 })
