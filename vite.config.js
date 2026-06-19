@@ -9,8 +9,8 @@ export default defineConfig({
   base: '/My_Portfolio/',
   plugins: [react(), tailwindcss()],
   build: {
-    // Output to the `docs` folder so GitHub Pages can serve from `docs/` (or configure otherwise)
-    outDir: 'docs',
+    // Output to the `dist` folder to match CI expectations
+    outDir: 'dist',
     emptyOutDir: true,
   },
 })
