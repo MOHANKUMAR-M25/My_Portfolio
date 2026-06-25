@@ -1,18 +1,14 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
     branches: [main, master]
   workflow_dispatch:
 
-# Permissions required for the official Pages deploy action
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment, but never cancel an in-progress one
-# (cancelling mid-deploy can leave Pages in a bad state).
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -28,10 +24,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          cache: npm          # remove this line if you have no package-lock.json
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4   # auto-injects correct base path
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci             # requires committed package-lock.json; else use: npm install
 
       - name: Build
         run: npm run build
@@ -39,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist            # MUST match your build output dir
 
   deploy:
     needs: build
