@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="flex flex-col gap-6">
           <a href="#contact" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold">Contact</a>
           <p className="text-white/60 font-mono text-[9px] md:text-[10px]">
-            &copy; {new Date().getFullYear()} Mohankumar M | Built with React
+            &copy; {new Date().getFullYear()} Mohankumar M | All rights reserved.
           </p>
         </div>
 
