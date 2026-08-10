@@ -46,13 +46,13 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2 md:items-center">
-          <a href="mailto:mohankumar.m2@cognizant.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">mohankumar.m2@cognizant.com (work)</a>
-          <a href="mailto:mohitsant2004@gmail.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">mohitsant2004@gmail.com</a>
+          {/* <a href="mailto:mohankumar.m2@cognizant.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">mohankumar.m2@cognizant.com (work)</a> */}
+          <a href="mailto:mohankumarcts25@gmail.com" className="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">mohankumarcts25@gmail.com</a>
           <a href="tel:+918015252383" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">+91 80152 52383</a>
         </div>
 
         <div className="flex flex-col gap-2 md:items-end">
-          <a href="https://github.com/Mohankumar57" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">GitHub</a>
+          <a href="https://github.com/MOHANKUMAR-M25" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">GitHub</a>
           <a href="https://www.linkedin.com/in/mohankumar-m-617999229/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors underline-offset-4 decoration-1">LinkedIn</a>
         </div>
       </div>
