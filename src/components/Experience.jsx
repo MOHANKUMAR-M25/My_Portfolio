@@ -116,13 +116,13 @@ const Experience = () => {
           <p className="text-blue-50 text-base md:text-lg font-semibold max-w-xl leading-relaxed">
             Currently a{' '}
             <span className="text-white font-black">Programmer Analyst Trainee</span> at Cognizant.
-            Reach me at{' '}
+            {/* Reach me at{' '}
             <a
               href="mailto:mohankumar.m2@cognizant.com"
               className="text-white font-black underline underline-offset-4 decoration-2 hover:text-cyan-300 transition-colors break-all"
             >
               mohankumar.m2@cognizant.com
-            </a>
+            </a> */}
           </p>
         </div>
 
